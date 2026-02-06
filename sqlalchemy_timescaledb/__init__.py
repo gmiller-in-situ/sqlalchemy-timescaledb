@@ -19,6 +19,11 @@ registry.register(
     'sqlalchemy_timescaledb.dialect',
     'TimescaledbAsyncpgDialect'
 )
+registry.register(
+    'timescaledb.psycopg',
+    'sqlalchemy_timescaledb.dialect',
+    'TimescaledbPsycopgDialect'
+)
 
 def sane_traceback(now: bool = True) -> str:
     """
